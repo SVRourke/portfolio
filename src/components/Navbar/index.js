@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './navbar.scss'
 const NavBar = () => {
   return (
-    <section>
+    <section id={'NavBar'}>
       <div>
         <p>Samuel V. Rourke</p>
         <p>Full-Stack Developer</p>
