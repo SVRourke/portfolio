@@ -3,13 +3,39 @@ import './Work.scss'
 
 const Work = () => {
   return (
-    <section className={"main-container column about"}>
-      <div className={"about-row row"}>
-        <div className={"about-left column"}>
-          <h2>My Work:</h2>
+    <section className={"main-container column work"}>
+      <h2>My Work:</h2>
+      <div className={"work-row row"}>
+        <div className={"work-card"} >
+          <h1>Forms</h1>
         </div>
 
-        <div className={"about-right column"}>
+        <div className={"work-card"} >
+          <h1>Pantry</h1>
+        </div>
+
+        <div className={"work-card"} >
+          <h1>Kanban</h1>
+        </div>
+
+        <div className={"work-card"} >
+          <h1>Quizzlet</h1>
+        </div>
+
+        <div className={"work-card"} >
+          <h1>Dice</h1>
+        </div>
+
+        <div className={"work-card"} >
+          <h1>Ultima Tec</h1>
+        </div>
+
+        <div className={"work-card"} >
+          <h1>Trading Unlimited</h1>
+        </div>
+
+        <div className={"work-card"} >
+          <h1>Portfolio</h1>
         </div>
       </div>
     </section>
