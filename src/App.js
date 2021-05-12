@@ -6,7 +6,7 @@ import Work from './components/Work/Work'
 import Techs from './components/Techs/Techs'
 import BlogSample from './components/BlogSample/BlogSample'
 import Contact from './components/Contact/Contact'
-
+import Footer from './components/Footer/Footer'
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
       <Techs />
       <BlogSample />
       <Contact />
+      <Footer />
     </>
   );
 }
