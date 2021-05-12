@@ -1,3 +1,41 @@
 .techs {
-    
+    justify-content: center;
+    h2 {
+        font-weight: 600;
+        font-size: 4rem;
+    }
+    p {
+        max-width: 50ch;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    button {
+        padding: .7rem 1rem;
+        font-size: 1.3rem;
+        border: solid black 2px;
+        background: none;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            transition: 500ms;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 1.5rem;
+        }
+    }
+    &-icon-row {
+        padding-top: 2em;
+        flex-wrap: wrap;
+        .tech-card {
+            background: rgba($color: #000000, $alpha: .10);
+            width: 200px;
+            height: 200px;
+            &:not(:last-of-type) {
+                margin-right: 1.5rem;
+            }
+        }
+    }
 }
