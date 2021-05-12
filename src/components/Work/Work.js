@@ -4,7 +4,7 @@ import './Work.scss'
 const Work = () => {
   return (
     <section className={"main-container column work"}>
-      <h2>My Work:</h2>
+      <h2>my work:</h2>
       <div className={"work-row row"}>
         <div className={"work-card"} >
           <h1>Forms</h1>
