@@ -1,0 +1,15 @@
+@mixin block_container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0rem 15rem;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
