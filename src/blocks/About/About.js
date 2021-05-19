@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.scss'
-
+import Calendar from 'components/Calendar'
 const About = () => {
   return (
     <section className={"main-container column about"}>
@@ -13,12 +13,12 @@ const About = () => {
             magna aliqua. Maecenas sed enim ut sem viverra aliquet. 
             Sit amet mattis vulputate enim nulla aliquet porttitor. 
             Consectetur a erat nam at lectus urna duis convallis. Magnis 
-            dis parturient montes nascetur ridiculus. 
-          </p>  
+            dis parturient montes nascetur ridiculus.
+          </p>
         </div>
 
         <div className={"about-right column"}>
-          <div className={"contrib"} />
+          <Calendar />
         </div>
       </div>
     </section>
