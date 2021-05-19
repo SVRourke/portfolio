@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
 import './header.scss'
 
-import { fetchContributions } from 'fetch-contribution-calendar'
+
 
 const Header = () => {
-
-  useEffect(() => {
-    fetchContributions('SVRourke')
-    .then(r => console.log("IT WORKED", r))
-  })
 
   return (
     <header className={"main-container column header"}>
