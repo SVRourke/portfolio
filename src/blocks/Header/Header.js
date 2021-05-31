@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './header.scss'
-
+import ProfilePic from '../../assets/PROF.JPG'
 
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
       <div className={'header-row row'}>
 
         <div className={'column header-left'}>
-          <div className={'pic'} />
+          {/* <img className={'pic'} src={ProfilePic} /> */}
         </div>
 
         <div className={'column header-right'}>

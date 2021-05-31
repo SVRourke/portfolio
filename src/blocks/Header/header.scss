@@ -1,13 +1,18 @@
 .header {
     justify-content: space-around;
+    background-image: url('../../assets/PROF.JPG');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
 
 
 
     .pic {
-        border-radius: 35%;
-        width: 25vw;
-        height: 50vh;
-        background-color: grey;
+        position: relative;
+        width: 200%;
+        z-index: -10;
+        left: -50%;
+        bottom: -50px;
     }
 
     &-row {
