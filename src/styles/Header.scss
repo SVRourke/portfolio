@@ -8,27 +8,32 @@ header {
 span {
     font-family: 'Roboto';
     font-weight: 600;
-    position: relative;
-
-    &#hi {
-        top: -5rem;
-        font-size: 30rem;
-        color: $darker-mockup-gray;
-    }
-
-    &#im {
-        z-index: 5;
-        top: -35%;
-        font-size: 20rem;
-        -webkit-text-stroke: $light-mockup-gray 4px ;
-        color: transparent;
-    }
-    
-    &#sam {
-        font-size: 40rem;
-        color: $bright-forest;
-        bottom: 40rem;
-        // line-height: 0;
-    }
+    color: inherit;
+    font-size: inherit;
 }
 
+#hi {
+    font-size: 30rem;
+    color: $darker-mockup-gray;
+}
+.im {
+    z-index: 10;
+    top: -100%;
+}
+#im {
+    font-size: 20rem;
+    -webkit-text-stroke: $light-mockup-gray 4px ;
+    color: transparent;
+}
+.sam {
+    z-index: 5;
+    bottom: 10rem;
+}
+#sam {
+    font-size: 40rem;
+    color: $bright-forest;
+    
+}
+.hero-word {
+    position: relative;
+}
