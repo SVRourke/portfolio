@@ -1,28 +1,8 @@
-import './App.scss';
-
-import {
-  Header,
-  NavBar,
-  About,
-  Work,
-  Techs,
-  BlogSample,
-  Contact,
-  Footer
-} from 'blocks'
+import 'styles/App.scss';
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Header />
-      <About />
-      <Work />
-      <Techs />
-      <BlogSample />
-      <Contact />
-      <Footer />
-    </>
+    <h1>Hello World</h1>
   );
 }
 
