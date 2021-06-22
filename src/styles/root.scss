@@ -1,3 +1,11 @@
 @import 'imports';
 
 // Spot for utility classes;
+.block {
+    padding: 2vw 5vw;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
