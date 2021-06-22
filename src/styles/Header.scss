@@ -5,36 +5,21 @@ header {
     height: 100vh;
     overflow: hidden;
 }
-
-
-h1 {
+span {
     font-family: 'Roboto';
     font-weight: 600;
-    font-size: $base-font-size;
-    display: flex;
-    flex-direction: column;
-}
-
-.block {
-    padding: 2vw 5vw;
-}
-
-span {
-    display: block;
-    position: absolute;
-    line-height: 0;
+    position: relative;
 
     &#hi {
-        top: 18rem;
-        font-size: 28rem;
+        top: -5rem;
+        font-size: 30rem;
         color: $darker-mockup-gray;
-
     }
 
     &#im {
         z-index: 5;
-        top: 45%;
-        font-size: 15rem;
+        top: -35%;
+        font-size: 20rem;
         -webkit-text-stroke: $light-mockup-gray 4px ;
         color: transparent;
     }
@@ -42,7 +27,8 @@ span {
     &#sam {
         font-size: 40rem;
         color: $bright-forest;
-        bottom: 18rem;
+        bottom: 40rem;
+        // line-height: 0;
     }
 }
 
