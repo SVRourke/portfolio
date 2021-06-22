@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 export default function Header() {
     return (
         <header className={'block col'}>
-            <Fade  className='hero-word hi' direction={'down'} >
+            <Fade className='hero-word hi' direction={'down'} >
                 <span id='hi'>Hi,</span>
             </Fade>
 
