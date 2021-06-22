@@ -1,12 +1,20 @@
 import React from 'react'
 import 'styles/Header.scss'
+import { Fade } from 'react-awesome-reveal'
 
 export default function Header() {
     return (
         <header className={'block col'}>
-                <span id='hi' >Hi,</span>
-                <span id='im' >I'm</span>
-                <span id='sam' >Sam.</span>
+            <Fade  className='hero-word hi' direction={'down'} >
+                <span id='hi'>Hi,</span>
+            </Fade>
+
+            <Fade className='hero-word sam' direction={'right'} duration={1000} delay={600}>
+                <span id='sam'>Sam.</span>
+            </Fade>
+            <Fade className='hero-word im' direction={'left'} delay={200} >
+                <span id='im'>I'm</span>
+            </Fade>
         </header>
     )
 }
