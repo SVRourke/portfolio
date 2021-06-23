@@ -13,7 +13,7 @@ export default function Header() {
                 <span id='sam'>Sam.</span>
             </Fade>
             <Fade className='hero-word im' direction={'left'} delay={200} >
-                <span id='im'>I'm</span>
+                <span className='outline-title'>I'm</span>
             </Fade>
         </header>
     )
