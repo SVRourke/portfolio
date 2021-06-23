@@ -1,11 +1,18 @@
-@import 'imports';
+@import "imports";
 
 // Spot for utility classes;
 .block {
-    padding: 2vw 5vw;
+  padding: 2vw 5vw;
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.outline-title {
+  font-weight: 600;
+  font-size: 20rem;
+  -webkit-text-stroke: $light-mockup-gray 4px;
+  color: transparent;
 }
