@@ -1,39 +1,34 @@
-@import 'root';
+@import "root";
 
 header {
-    background-color: $pomegranate-chocolate;
-    height: 100vh;
-    overflow: hidden;
+  background-color: rgb(56, 56, 56);
+  // background-color: $pomegranate-chocolate;
+  height: 100vh;
+  overflow: hidden;
 }
 span {
-    font-family: 'Roboto';
-    font-weight: 600;
-    color: inherit;
-    font-size: inherit;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: inherit;
+  font-size: inherit;
 }
 
 #hi {
-    font-size: 30rem;
-    color: $darker-mockup-gray;
+  font-size: 30rem;
+  color: $darker-mockup-gray;
 }
 .im {
-    z-index: 10;
-    top: -100%;
-}
-#im {
-    font-size: 20rem;
-    -webkit-text-stroke: $light-mockup-gray 4px ;
-    color: transparent;
+  z-index: 10;
+  top: -100%;
 }
 .sam {
-    z-index: 5;
-    bottom: 10rem;
+  z-index: 5;
+  bottom: 10rem;
 }
 #sam {
-    font-size: 40rem;
-    color: $bright-forest;
-    
+  font-size: 40rem;
+  color: $bright-forest;
 }
 .hero-word {
-    position: relative;
+  position: relative;
 }
