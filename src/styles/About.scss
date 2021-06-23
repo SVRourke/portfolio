@@ -1,6 +1,44 @@
-@import 'root';
+@import "root";
 
 #about {
-    background-color: $olive-slate;
-    height: 100%;
+  background-color: $olive-slate;
+  //   height: 100vh;
+
+  padding: 10rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 10vh);
+
+  .fadeIm {
+    grid-column: 1 / 6;
+    grid-row: 1 / 5;
+  }
+  .about-full {
+    grid-column: 5 /12;
+    grid-row: 1 / 5;
+    color: $dusty-yellow;
+    font-size: 20rem;
+  }
+
+  .about-stack {
+    margin-top: -4rem;
+    font-size: 25rem;
+    color: $mockup-gray;
+    grid-column: 6 /12;
+    grid-row: 3 / 8;
+    -webkit-text-stroke: $dusty-yellow 2px;
+  }
+
+  #calendar {
+    width: 100%;
+    background-color: black;
+  }
+
+  .software-engineer {
+    text-align: center;
+    font-size: 12rem;
+    grid-column: 1 / 13;
+    color: $soft-teal;
+    -webkit-text-stroke: $light-mockup-gray 2px;
+  }
 }
