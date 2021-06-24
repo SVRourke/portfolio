@@ -2,17 +2,18 @@
 
 #about {
   background-color: $olive-slate;
-  //   height: 100vh;
+  height: 100%;
 
-  padding: 10rem 5rem;
+  padding: 5rem 5rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 10vh);
+  grid-template-rows: repeat(18, 10vh);
 
   .fadeIm {
     grid-column: 1 / 6;
     grid-row: 1 / 5;
   }
+
   .about-full {
     grid-column: 5 /12;
     grid-row: 1 / 5;
@@ -30,15 +31,48 @@
   }
 
   #calendar {
-    width: 100%;
+    height: 100%;
+    grid-column: 1 / 13;
+    grid-row: 14 / 18;
+
     background-color: black;
   }
 
   .software-engineer {
+    line-height: 0;
     text-align: center;
     font-size: 12rem;
     grid-column: 1 / 13;
     color: $soft-teal;
-    -webkit-text-stroke: $light-mockup-gray 2px;
+    -webkit-text-stroke: $light-mockup-gray 1px;
+  }
+
+  .paragraphs-container {
+    grid-column: 1 / 13;
+    grid-row: 9 / 13;
+
+    &:first-of-type {
+      // padding-right: 2rem;
+      grid-column: 1 / 7;
+    }
+
+    &:last-of-type {
+      // padding-left: 2rem;
+      grid-column: 7 / 13;
+    }
+    p {
+      -webkit-text-stroke: $darker-mockup-gray 1px;
+      // color: $dark-mockup-gray;
+      // color: rgb(179, 154, 102);
+      color: rgb(160, 160, 160);
+      font-weight: 400;
+      line-height: 1.5;
+
+      max-width: 29ch;
+      font-size: 2.5rem;
+      margin-top: 2rem;
+
+      // grid-row: 9 / 13;
+    }
   }
 }
