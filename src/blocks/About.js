@@ -21,24 +21,31 @@ export default function About() {
         <span>a full-</span>
       </Fade>
 
-      <Fade className="about-stack" delay={800} direction={"right"}>
+      <Fade
+        className="about-stack"
+        delay={800}
+        duration={600}
+        direction={"right"}
+      >
         <span>stack</span>
       </Fade>
-      <Fade className="software-engineer" delay={400} direction={"in"}>
+      <Fade className="software-engineer" delay={1200} direction={"in"}>
         <span>software engineer</span>
       </Fade>
 
-      <p>
-        loremEa minim ea magna commodo pariatur occaecat mollit enim et dolor
-        mollit sint dolor exercitation. Consectetur culpa incididunt ut
-        cupidatat in. Ad qui id laboris consectetur consequat esse culpa nisi.
-      </p>
+      <Fade className="paragraphs-container" delay={1600}>
+        <p>
+          I'm passionate about creating tools that help people and provide value
+          whether monetary or otherwise. I am a dedicated lifelong learner and
+          I'm always looking for opportunities to learn new things.
+        </p>
 
-      <p>
-        loremEa minim ea magna commodo pariatur occaecat mollit enim et dolor
-        mollit sint dolor exercitation. Consectetur culpa incididunt ut
-        cupidatat in. Ad qui id laboris consectetur consequat esse culpa nisi.
-      </p>
+        <p>
+          loremEa minim ea magna commodo pariatur occaecat mollit enim et dolor
+          mollit sint dolor exercitation. Consectetur culpa incididunt ut
+          cupidatat in. Ad qui id laboris consectetur consequat esse culpa nisi.
+        </p>
+      </Fade>
 
       <section id="calendar">.</section>
     </section>
