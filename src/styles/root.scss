@@ -1,5 +1,13 @@
 @import "imports";
+@import "variables";
+@import "resets";
 
+html {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 // Spot for utility classes;
 .block {
   padding: 2vw 5vw;
