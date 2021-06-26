@@ -5,9 +5,10 @@ import { Fade } from "react-awesome-reveal";
 
 export default function Projects() {
   return (
-      <section className='projects'>
-        
-
-      </section>;
-  ) 
+    <section className="projects">
+      <Fade direction={"down"} className={"fadeIm"}>
+        <span className="outline-title">I've made</span>
+      </Fade>
+    </section>
+  );
 }
