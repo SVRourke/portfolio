@@ -1,7 +1,12 @@
 import "styles/App.scss";
+import Hero from "components/Hero";
 
 function App() {
-  return <p>Hello</p>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
 
 export default App;
