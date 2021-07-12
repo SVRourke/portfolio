@@ -1,5 +1,6 @@
 import React from "react";
 import "styles/components/hero.scss";
+import ProfilePic from "assets/PROFILESVGGOOD.svg";
 
 export default function Hero() {
   return (
@@ -19,7 +20,9 @@ export default function Hero() {
           easier for people.
         </p>
       </div>
-      <div className="hero-imagePlaceholder"></div>
+      <div className="hero-imagePlaceholder">
+        <img src={ProfilePic} />
+      </div>
     </div>
   );
 }
