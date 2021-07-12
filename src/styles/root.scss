@@ -1,27 +1,4 @@
 @import "imports";
 @import "variables";
 @import "resets";
-
-html {
-  height: 100vh;
-  overflow-y: scroll;
-overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-// Spot for utility classes;
-.block {
-  padding: 2vw 5vw;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-.outline-title {
-  font-weight: 600;
-  font-size: 20rem;
-  -webkit-text-stroke: $light-mockup-gray 4px;
-  color: transparent;
-}
+@import "mixins";
