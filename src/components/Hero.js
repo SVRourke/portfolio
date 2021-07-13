@@ -13,12 +13,10 @@ export default function Hero() {
         <a>contact</a>
       </div>
       <div className="hero-textbox">
-        <span>✌</span>
-        <h1>Hi I'm Sam</h1>
-        <p>
+        <h1>
           I'm passionate about creating tools that provide value and make life
           easier for people.
-        </p>
+        </h1>
       </div>
       <div className="hero-imagePlaceholder">
         <img src={ProfilePic} />
