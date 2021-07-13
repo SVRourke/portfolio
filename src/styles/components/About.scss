@@ -1,0 +1,42 @@
+@import "../root.scss";
+
+#about {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-items: center;
+  padding: 8vh 20%;
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  .col {
+    &:not(:last-of-type) {
+      padding: 3rem;
+      width: 100%;
+    }
+    width: 45%;
+    justify-content: center;
+  }
+}
+
+#calendar-placeholder {
+  width: 100%;
+  height: 80vh;
+  background-color: gray;
+}
+
+.row {
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+
+  p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+  }
+}
+#info-grid {
+  width: 100%;
+}
