@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "styles/components/ProjectCard.scss";
 
-export default function ProjectCard() {
+export default function ProjectCard({ image }) {
+  const [open, setOpen] = useState(false);
+
+  const style = {
+    backgroundImage: `url(${image})`,
+  };
   return (
     <div class="project-card">
       <CardHeading />
+      <div class="project-card_image-container" style={style}></div>
     </div>
   );
 }
-// Sub-Components
+
+/*
+ Sub-Components
+ */
 const CardHeading = () => {
   return (
     <div class="project-card_header">
