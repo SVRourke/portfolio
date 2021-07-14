@@ -1,0 +1,40 @@
+@import "../root.scss";
+
+.accordion {
+  padding: 1.5rem 0;
+  cursor: grab;
+
+  &-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    &:first-of-type {
+      margin-bottom: 0.6rem;
+    }
+    &:last-of-type {
+      margin-top: 1.2rem;
+    }
+  }
+
+  &-item {
+    font-weight: 400;
+    margin-left: 1rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0.6rem;
+    }
+  }
+}
+
+.builtTitle {
+  &-const {
+    font-weight: 400;
+    color: rgb(139, 67, 67);
+  }
+  &-title {
+    color: rgb(66, 153, 54);
+  }
+  &-ending {
+    color: rgb(117, 117, 117);
+  }
+}
