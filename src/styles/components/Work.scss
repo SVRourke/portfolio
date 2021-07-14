@@ -2,8 +2,34 @@
 
 #work {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
   padding: 8vh 20%;
+
+  h2 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 5rem;
+  }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .github-link {
+    padding: 0.5rem;
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+
+    &:hover {
+      font-size: 1.4rem;
+      text-shadow: 5px 5px 1px #dfdfdf;
+      transition: all 200ms ease-in-out;
+    }
+  }
 }
