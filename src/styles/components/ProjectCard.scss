@@ -4,4 +4,33 @@
   background-color: gray;
   height: 30vh;
   border-radius: 0.3rem;
+
+  overflow: hidden;
+
+  &_header {
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    .cardButton {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      margin-left: 1rem;
+      border-radius: 50%;
+
+      &-min {
+        background-color: green;
+      }
+      &-max {
+        background-color: yellow;
+      }
+      &-close {
+        background-color: red;
+      }
+    }
+  }
 }
