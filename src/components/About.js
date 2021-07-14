@@ -1,7 +1,18 @@
 import React from "react";
+import ArrayAccordion from "./ArrayAccordion";
 import "styles/components/About.scss";
 
 export default function About() {
+  const items = [
+    { title: "languages", items: ["JavaScript", "Ruby", "Python"] },
+    { title: "frameworks", items: ["Ruby on Rails", "React", "Express"] },
+    { title: "markdown", items: ["HTML5", "markdown (GitHub)"] },
+    { title: "tools", items: ["Figma", "etc"] },
+    { title: "misc", items: ["Figma", "etc"] },
+  ];
+
+  const accordions = items.map((item) => <ArrayAccordion data={item} />);
+
   return (
     <section id="about">
       <div class="col">
@@ -15,13 +26,8 @@ export default function About() {
             I'm constantly learning about new technologies.
           </p>
         </div>
-        <div id="info-grid">
-          <p>languages</p>
-          <p>frameworks</p>
-          <p>markdown</p>
-          <p>tools</p>
-          <p>misc</p>
-        </div>
+
+        <div id="info-grid">{accordions}</div>
       </div>
 
       <div class="col">
