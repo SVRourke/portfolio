@@ -1,1 +1,16 @@
 @import "../root.scss";
+
+#blog {
+  min-height: 100vh;
+  padding: 8vh 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h2 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 5rem;
+  }
+}
