@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import FeaturedPost from "./partials/FeaturedPost";
+import SidePostCard from "./partials/SidePostCard";
 import "styles/components/Blog.scss";
 import posts from "data/BlogData";
 
@@ -15,40 +17,9 @@ export default function Blog() {
         {sidePosts}
       </div>
       {/* Make A Component For this and projects page */}
-      <a id="blog_read-more" href="#hero">
+      <a id="blog_read-more" href="https://svrourke.medium.com/">
         read more ->
       </a>
     </section>
   );
 }
-
-// Sub Components move to separate files in "elements" or "partials" folder
-const FeaturedPost = ({ post }) => {
-  const truncTitle = post.title.slice(0, 18);
-  return (
-    <a href={post.url} id="featured-post">
-      <div id="featured-post_info-card">
-        <h3>{truncTitle}...</h3>
-        <hr></hr>
-        <p>{post.description}</p>
-      </div>
-    </a>
-  );
-};
-
-const SidePostCard = ({ post }) => {
-  const newDate = post.date.split("-");
-  return (
-    <a href={post.url} class="side-post">
-      <span>
-        {newDate[0]}
-        <br></br>
-        {newDate[1]}
-      </span>
-      <div>
-        <h3>{post.title}</h3>
-        <p>{post.description}</p>
-      </div>
-    </a>
-  );
-};
