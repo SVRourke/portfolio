@@ -1,6 +1,7 @@
 import React from "react";
 import "styles/components/hero.scss";
 import ProfilePic from "assets/PROFILESVGGOOD.svg";
+import Calendar from "./Calendar";
 
 export default function Hero() {
   return (
@@ -19,6 +20,7 @@ export default function Hero() {
         </h1>
       </div>
       <div className="hero-imagePlaceholder">
+        <Calendar />
         <img src={ProfilePic} />
       </div>
     </div>
