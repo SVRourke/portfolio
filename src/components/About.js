@@ -1,7 +1,7 @@
 import React from "react";
 import ArrayAccordion from "./ArrayAccordion";
 import "styles/components/About.scss";
-
+import Calendar from "./Calendar";
 export default function About() {
   const items = [
     { title: "languages", items: ["JavaScript", "Ruby", "Python"] },
@@ -31,7 +31,7 @@ export default function About() {
       </div>
 
       <div class="col">
-        <div id="calendar-placeholder">calendar</div>
+        <Calendar />
       </div>
     </section>
   );
