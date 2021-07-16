@@ -1,37 +1,36 @@
 .calendar {
-    width: 600px;
-    height: 600px;
-    border-radius: 10px;
+  position: absolute;
+  width: fit-content;
+  height: auto;
+  border-radius: 10px;
 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 2px;
+
+  .block {
+    height: 5rem;
+    width: 5rem;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    gap: 2px;
+    place-items: center;
+    text-align: center;
 
-    .block {
-        display: grid;
-        place-items: center;
-        text-align: center;
-        
+    &:hover {
+      border: solid rgb(133, 214, 224) 1px;
 
-        &:hover {
-            border: solid rgb(133, 214, 224) 1px;
-
-            
-            .overlay {
-                display: block;
-            }
-            
-        }
-        
-        .overlay {
-            display: none;
-        }
-        
-        width: 100%;
-        height: 100%;
-        
-        background-color: rgba(0,0,0,.5)
-        rgba(110, 240, 179, 0.931)
+      .overlay {
+        display: block;
+      }
     }
+
+    .overlay {
+      display: none;
+    }
+
+    // width: 100%;
+    // height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5) rgba(110, 240, 179, 0.931);
+  }
 }
