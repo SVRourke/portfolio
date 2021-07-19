@@ -11,7 +11,7 @@
   #contact-container {
     @include row;
     height: 50vh;
-    border: solid black 2px;
+    border: solid $color--base-black 2px;
     justify-content: space-between;
     border-radius: 0.3rem;
     padding: 3rem;
@@ -48,18 +48,18 @@
       input[type="submit"] {
         background-color: white;
         font-weight: 500;
-        color: black;
+        color: $color--base-black;
 
         &:hover {
           transition: all 200ms ease-in-out;
-          background-color: black;
+          background-color: $color--base-black;
           color: white;
         }
       }
       input,
       textarea {
         font-weight: 300;
-        border: solid black 2px;
+        border: solid $color--base-black 2px;
         border-radius: 0.3rem;
         font-size: 1.25rem;
         padding: 0.7rem 0.5rem;
