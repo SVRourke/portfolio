@@ -6,11 +6,12 @@
 .section_read-more {
   color: $color--base-black;
   font-size: 1.3rem;
+  font-weight: 700;
+
   text-decoration: none;
   text-align: center;
   display: block;
   width: 100%;
-  font-weight: 700;
 
   &:hover {
     font-size: 1.4rem;
