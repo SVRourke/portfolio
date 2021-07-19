@@ -11,7 +11,7 @@
   }
   @include lg {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 8vh;
   }
 }
@@ -24,6 +24,16 @@
 @mixin column {
   display: flex;
   flex-direction: column;
+}
+
+@mixin bordered {
+  border: solid $color--base-black 2px;
+  border-radius: 0.3rem;
+}
+
+@mixin border-thin {
+  @include bordered;
+  border-width: 1px;
 }
 
 // BREAKPOINTS
