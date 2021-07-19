@@ -5,8 +5,7 @@
   cursor: grab;
 
   &-title {
-    font-size: 1.3rem;
-    font-weight: 700;
+    color: $color--gray;
 
     &:first-of-type {
       margin-bottom: 0.6rem;
@@ -28,13 +27,13 @@
 
 .builtTitle {
   &-const {
-    font-weight: 400;
-    color: rgb(139, 67, 67);
+    color: $color--red;
   }
   &-title {
-    color: rgb(66, 153, 54);
+    font-weight: 700;
+    color: $color--green;
   }
   &-ending {
-    color: rgb(117, 117, 117);
+    color: $color--gray;
   }
 }
