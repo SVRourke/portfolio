@@ -11,13 +11,13 @@ export default function Blog() {
 
   return (
     <section id="blog">
-      <h2>i like to say stuff</h2>
+      <h2 class="block_heading">i like to say stuff</h2>
       <div id="sample-post_container">
         <FeaturedPost post={posts[0]} />
         {sidePosts}
       </div>
       {/* Make A Component For this and projects page */}
-      <a id="blog_read-more" href="https://svrourke.medium.com/">
+      <a class="section_read-more" href="https://svrourke.medium.com/">
         read more ->
       </a>
     </section>

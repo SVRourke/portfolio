@@ -16,7 +16,7 @@ export default function About() {
   return (
     <section id="about">
       <div class="col">
-        <h2>hi, i'm sam!✌🏻</h2>
+        <h2 class="block_heading">hi, i'm sam!✌🏻</h2>
         <div class="row">
           <p>
             I’m a full stack developer located in south Florida. 🐊 My primary

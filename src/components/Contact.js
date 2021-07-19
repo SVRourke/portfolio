@@ -11,8 +11,8 @@ export default function Contact() {
 
   return (
     <section id="contact" calss="column">
-      <h3>let's talk!</h3>
-      <div class="row">
+      <h2 class="block_heading">let's talk!</h2>
+      <div id="contact-container">
         <div id="contact-badges" class="column">
           <a class="contact-badge" href="#hero">
             <ImLinkedin />
