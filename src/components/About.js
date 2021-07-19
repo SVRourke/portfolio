@@ -15,9 +15,9 @@ export default function About() {
 
   return (
     <section id="about">
-      <div class="col">
+      <div class="about-content">
         <h2 class="block_heading">hi, i'm sam!✌🏻</h2>
-        <div class="row">
+        <div id='about-texts'>
           <p>
             I’m a full stack developer located in south Florida. 🐊 My primary
             stack is Ruby on Rails with React. While I would categorize my
@@ -30,7 +30,7 @@ export default function About() {
         <div id="info-grid">{accordions}</div>
       </div>
 
-      <div class="col">
+      <div class="about-content">
         <Calendar />
       </div>
     </section>
