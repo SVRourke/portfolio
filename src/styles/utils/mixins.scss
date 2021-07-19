@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+@mixin block_container {
+  width: 100%;
+
+  @include sm {
+    padding: 0;
+  }
+  @include md {
+    padding: 8vh 20%;
+  }
+  @include lg {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 8vh;
+  }
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+// BREAKPOINTS
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
