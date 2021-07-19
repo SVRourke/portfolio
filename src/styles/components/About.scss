@@ -1,16 +1,11 @@
 @import "../root.scss";
 
 #about {
-  width: 100%;
+  @include block_container;
   min-height: 100vh;
+
   display: flex;
   justify-items: center;
-  padding: 8vh 20%;
-
-  h2 {
-    font-size: 5rem;
-    margin-bottom: 1rem;
-  }
 
   .col {
     &:not(:last-of-type) {

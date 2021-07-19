@@ -1,15 +1,15 @@
 @import "../root.scss";
 
 #contact {
-  //   min-height: 100vh;
-  padding: 8vh 20%;
+  @include block_container;
 
   h3 {
     font-size: 4rem;
     margin-bottom: 2rem;
   }
 
-  .row {
+  #contact-container {
+    @include row;
     height: 50vh;
     border: solid black 2px;
     justify-content: space-between;
@@ -18,9 +18,9 @@
 
     #contact-badges {
       .contact-badge {
+        @include row;
         align-items: center;
         text-decoration: none;
-        display: flex;
         width: 100%;
 
         p {
@@ -39,8 +39,6 @@
 
     form {
       height: 100%;
-      display: flex;
-      flex-direction: column;
       justify-content: center;
 
       textarea {
@@ -74,8 +72,7 @@
 
     #contact-badges,
     form {
-      display: flex;
-      flex-direction: column;
+      @include column;
       width: 50%;
     }
   }
