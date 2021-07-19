@@ -1,0 +1,23 @@
+/*
+    =======================
+    Style related variables
+    =======================
+*/
+// Colors
+$color--base-black: rgb(71, 71, 71);
+// Font Stuff
+$base-font-size: 24px;
+
+// Padding
+$block-padding-top: 8vh;
+$block-padding-sides: 20%;
+
+/*
+    =======================
+    Screen sizes
+    =======================
+*/
+$screen-sm-min: 576px; // Small tablets and large smartphones
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
