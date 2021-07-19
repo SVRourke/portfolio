@@ -1,16 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Lato", "sans-serif";
-  color: rgb(71, 71, 71);
-}
+@import "root.scss";
 
-.col {
-  display: flex;
-  flex-direction: column;
-}
-.row {
-  display: flex;
-  flex-direction: row;
+* {
+  font-family: "Lato", "sans-serif";
+  color: $color--base-black;
 }
