@@ -16,9 +16,8 @@ export default function Blog() {
         <FeaturedPost post={posts[0]} />
         {sidePosts}
       </div>
-      {/* Make A Component For this and projects page */}
       <a class="section_read-more" href="https://svrourke.medium.com/">
-        read more ->
+        read more >
       </a>
     </section>
   );
