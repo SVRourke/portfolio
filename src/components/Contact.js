@@ -9,6 +9,27 @@ export default function Contact() {
     message: "",
   });
 
+  const handleChange = (e) => {
+    const newValues = { ...formInfo };
+    newValues[e.target.name] = e.target.value;
+    setInfo(newValues);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.dir(formInfo);
+
+    fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams(formInfo).toString(),
+    })
+      .then(() => console.log("successfull submission"))
+      .catch(() => alert("submission error... try again"));
+  };
+
   return (
     <section id="contact" calss="column">
       <h2 class="block_heading">let's talk!</h2>
@@ -31,10 +52,28 @@ export default function Contact() {
             <p>email</p>
           </a>
         </div>
-        <form name="contact" method="POST" data-netlify="true">
-          <input name="name" type="text" placeholder="name" />
-          <input name="email" type="email" placeholder="email" />
-          <textarea name="message" placeholder="message here..." />
+
+        <form onSubmit={handleSubmit} name="contact">
+          <input
+            onChange={handleChange}
+            name="name"
+            type="text"
+            placeholder="name"
+            value={formInfo["name"]}
+          />
+          <input
+            onChange={handleChange}
+            name="email"
+            type="email"
+            placeholder="email"
+            value={formInfo["email"]}
+          />
+          <textarea
+            onChange={handleChange}
+            name="message"
+            placeholder="message here..."
+            value={formInfo["message"]}
+          />
           <input type="submit" value="send" />
         </form>
       </div>
