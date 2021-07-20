@@ -59,6 +59,7 @@ export default function Contact() {
         </div>
 
         <form onSubmit={handleSubmit} name="contact">
+          <input type="hidden" name="form-name" value="contact" />
           <input
             onChange={handleChange}
             name="name"
