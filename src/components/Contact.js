@@ -17,6 +17,14 @@ export default function Contact() {
     setInfo(newValues);
   };
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.dir(formInfo);
