@@ -20,19 +20,26 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.dir(formInfo);
-
     fetch("/", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: new URLSearchParams(formInfo).toString(),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => {
-        alert("successfull submission");
-        setInfo(initialState);
-      })
-      .catch(() => alert("submission error... try again"));
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    // fetch("/", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/x-www-form-urlencoded",
+    //   },
+    //   body: new URLSearchParams(formInfo).toString(),
+    // })
+    //   .then(() => {
+    //     alert("successfull submission");
+    //     setInfo(initialState);
+    //   })
+    //   .catch(() => alert("submission error... try again"));
   };
 
   return (
