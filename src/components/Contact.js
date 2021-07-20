@@ -31,7 +31,7 @@ export default function Contact() {
             <p>email</p>
           </a>
         </div>
-        <form>
+        <form name="contact" method="POST" data-netlify="true">
           <input name="name" type="text" placeholder="name" />
           <input name="email" type="email" placeholder="email" />
           <textarea name="message" placeholder="message here..." />
