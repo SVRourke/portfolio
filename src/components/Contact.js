@@ -3,11 +3,13 @@ import { ImLinkedin, ImGithub, ImTwitter, ImMail } from "react-icons/im";
 import "styles/components/Contact.scss";
 
 export default function Contact() {
-  const [formInfo, setInfo] = useState({
+  const initialState = {
     name: "",
     email: "",
     message: "",
-  });
+  };
+
+  const [formInfo, setInfo] = useState(initialState);
 
   const handleChange = (e) => {
     const newValues = { ...formInfo };
@@ -26,7 +28,10 @@ export default function Contact() {
       },
       body: new URLSearchParams(formInfo).toString(),
     })
-      .then(() => console.log("successfull submission"))
+      .then(() => {
+        alert("successfull submission");
+        setInfo(initialState);
+      })
       .catch(() => alert("submission error... try again"));
   };
 
