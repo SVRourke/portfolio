@@ -21,7 +21,7 @@ const Block = (props) => {
   );
 };
 
-const Calendar = (n) => {
+const Calendar = ({ n }) => {
   const [contributions, setContributions] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Calendar = (n) => {
 
   const offset = -1 * (n + 4);
   console.log(offset);
-  const contribs = Object.entries(contributions).slice(-49, -4).reverse();
+  const contribs = Object.entries(contributions).slice(offset, -4).reverse();
   const contribCards = contribs.map((c) => <Block props={c[1]} />);
 
   return <div className="calendar">{contribCards}</div>;
