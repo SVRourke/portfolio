@@ -17,7 +17,7 @@ export default function About() {
     <section id="about">
       <div class="about-content">
         <h2 class="block_heading">hi, i'm sam!✌🏻</h2>
-        <div id='about-texts'>
+        <div id="about-texts">
           <p>
             I’m a full stack developer located in south Florida. 🐊 My primary
             stack is Ruby on Rails with React. While I would categorize my
@@ -31,7 +31,7 @@ export default function About() {
       </div>
 
       <div class="about-content">
-        <Calendar />
+        <Calendar n={31} />
       </div>
     </section>
   );
