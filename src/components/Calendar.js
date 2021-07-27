@@ -21,13 +21,15 @@ const Block = (props) => {
   );
 };
 
-const Calendar = () => {
+const Calendar = (n) => {
   const [contributions, setContributions] = useState([]);
 
   useEffect(() => {
     fetchContributions("SVRourke").then((r) => setContributions(r));
   }, []);
 
+  const offset = -1 * (n + 4);
+  console.log(offset);
   const contribs = Object.entries(contributions).slice(-49, -4).reverse();
   const contribCards = contribs.map((c) => <Block props={c[1]} />);
 
