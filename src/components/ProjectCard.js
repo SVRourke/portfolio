@@ -13,6 +13,13 @@ export default function ProjectCard({
   return (
     <div class="project-card">
       <CardHeading />
+      <div className="image-overlay">
+        <h3>{name}</h3>
+        {/* is it live? */}
+        {/* is it written up? */}
+        {/* whats the repo? */}
+        <p>Hello</p>
+      </div>
       <div class="project-card_image-container" style={style}></div>
     </div>
   );
