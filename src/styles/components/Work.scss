@@ -4,10 +4,18 @@
   @include block_container;
   min-height: 100vh;
 
+  @include sm {
+    padding: 10%;
+  }
+  
   .work-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
+    
+      @include sm {
+        @include column;
+      }
   }
 }
