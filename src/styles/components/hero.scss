@@ -9,11 +9,24 @@
 
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 1fr);
+
+  @include sm {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    // display: flex;
+    // flex-direction: column;
+    padding: 10%;
+  }
 }
 
 .hero-navBar {
   grid-row: 1 / 2;
   grid-column: 1 / 7;
+
+  @include sm {
+    grid-row: 1 / 2;
+    grid-column: 1/ 2;
+  }
 
   @include row;
   justify-content: space-between;
@@ -37,9 +50,17 @@
   @include column;
   justify-content: center;
 
-  h1,
-  span {
+  @include sm {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+  }
+
+  h1 {
     font-size: 2.75rem;
+
+    @include sm {
+      font-size: 1.7rem;
+    }
   }
 
   p {
@@ -52,6 +73,11 @@
   grid-row: 1 / 6;
   overflow: hidden;
   text-align: center;
+
+  @include sm {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+  }
 
   img {
     position: relative;
