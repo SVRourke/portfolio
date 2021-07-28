@@ -4,6 +4,11 @@
   @include block_container;
   @include row;
 
+  @include sm {
+    padding: 10%;
+    @include column;
+  }
+
   min-height: 100vh;
   justify-items: center;
 
@@ -21,6 +26,11 @@
         max-width: 50ch;
         line-height: 1.75;
         font-size: 1.3rem;
+
+        @include sm {
+          max-width: 100%;
+          font-size: 1rem;
+        }
       }
     }
 
