@@ -3,9 +3,7 @@
 @mixin block_container {
   width: 100%;
 
-  @include sm {
-    padding: 0;
-  }
+  
   @include md {
     padding: 8vh 20%;
   }
@@ -40,7 +38,7 @@
 
 // Small devices
 @mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
+  @media (max-width: #{$screen-sm-min}) {
     @content;
   }
 }
