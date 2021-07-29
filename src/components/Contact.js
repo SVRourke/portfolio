@@ -44,7 +44,7 @@ export default function Contact() {
     <section id="contact" calss="column">
       <h2 class="block_heading">let's talk!</h2>
       <div id="contact-container">
-        <div id="contact-badges" class="column">
+        <div id="contact-badges">
           <a class="contact-badge" href="#hero">
             <ImLinkedin />
             <p>LinkedIn</p>
