@@ -1,33 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import "styles/components/partials/FeaturedPost.scss";
 
 const FeaturedPost = ({ post }) => {
-  const [hovered, setHovered] = useState(false);
-
-  const handleHover = () => {
-    setHovered(!hovered);
-  };
-  const truncTitle = hovered ? post.title : `${post.title.slice(0, 18)}...`;
-
-  const truncDesc = hovered
-    ? `${post.description.slice(0, 90)}... read more`
-    : `${post.description.slice(0, 40)}...`;
-
   const bgImg = {
     backgroundImage: `url(${post.img})`,
   };
   return (
-    <a
-      href={post.url}
-      id="featured-post"
-      style={bgImg}
-      onMouseOver={() => setHovered(true)}
-      onMouseOut={() => setHovered(false)}
-    >
+    <a href={post.url} id="featured-post" style={bgImg}>
       <div id="featured-post_info-card">
-        <h3>{truncTitle}</h3>
+        <h3>{post.title.slice(0, 20)}...</h3>
         <hr></hr>
-        <p>{truncDesc}</p>
+        <p>
+          {post.description.slice(0, 90)}... <u>read more ></u>
+        </p>
       </div>
     </a>
   );
