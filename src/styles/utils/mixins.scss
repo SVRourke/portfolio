@@ -2,8 +2,12 @@
 
 @mixin block_container {
   width: 100%;
+  height: 100%;
 
-  
+  @include sm {
+    padding: 10%;
+  }
+
   @include md {
     padding: 8vh 20%;
   }
