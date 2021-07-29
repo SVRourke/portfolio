@@ -16,21 +16,43 @@
     border-radius: 0.3rem;
     padding: 3rem;
 
+    @include sm {
+      @include column;
+      height: fit-content;
+    }
+
     #contact-badges {
+      @include column;
+
+      @include sm {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+      }
       .contact-badge {
         @include row;
         align-items: center;
         text-decoration: none;
         width: 100%;
 
+        @include sm {
+          width: fit-content;
+          margin-bottom: 2rem;
+        }
+
         p {
           font-size: 2rem;
+          @include sm {
+            width: 0;
+            display: none;
+          }
         }
 
         svg {
           font-size: 2rem;
           margin-right: 1rem;
         }
+
         &:not(:last-child) {
           margin-bottom: 2rem;
         }
@@ -40,6 +62,10 @@
     form {
       height: 100%;
       justify-content: center;
+
+      @include sm {
+        width: 100%;
+      }
 
       textarea {
         height: 100%;
@@ -74,6 +100,10 @@
     form {
       @include column;
       width: 50%;
+
+      @include sm {
+        width: 100%;
+      }
     }
   }
 }
