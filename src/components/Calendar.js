@@ -29,7 +29,6 @@ const Calendar = ({ n }) => {
   }, []);
 
   const offset = -1 * (n + 4);
-  console.log(offset);
   const contribs = Object.entries(contributions).slice(offset, -4).reverse();
   const contribCards = contribs.map((c) => <Block props={c[1]} />);
 
