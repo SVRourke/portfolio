@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import { getProjects } from "../cms/interface";
 import "styles/components/Work.scss";
@@ -6,9 +6,11 @@ import "styles/components/Work.scss";
 export default function Work() {
   const [projects, setProjects] = useState([]);
 
-  getProjects().then((d) => {
-    setProjects(d["portfolioProjects"]);
-  });
+  useEffect(() => {
+    getProjects().then((d) => {
+      setProjects(d["projects"]);
+    });
+  }, []);
 
   const cards = projects.map((project) => <ProjectCard data={project} />);
   return (
