@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ImGithub, ImFileText2, ImLink } from "react-icons/im";
 import "styles/components/ProjectCard.scss";
 
 export default function ProjectCard({
@@ -10,22 +11,34 @@ export default function ProjectCard({
     backgroundImage: `url(${imageLink})`,
   };
 
+  const blog = blogLink ? (
+    <a href={blogLink}>
+      <ImFileText2 />
+    </a>
+  ) : null;
+  const git = githubRepo ? (
+    <a href={githubRepo}>
+      <ImGithub />
+    </a>
+  ) : null;
+  const location = live ? (
+    <a href={live}>
+      <ImLink />
+    </a>
+  ) : null;
   return (
     <div class="project-card">
       <CardHeading />
       <div className="image-overlay">
-        {/* is it live? */}
-        {/* is it written up? */}
-        {/* whats the repo? */}
-        <p>Hello</p>
-        <p>{title}</p>
+        <h3>{title}</h3>
         <p>{description}</p>
-        <p>{blogLink}</p>
-        <p>{githubRepo}</p>
-        <p>{live}</p>
+        <div className="project-badges">
+          {blog}
+          {git}
+          {location}
+        </div>
       </div>
 
-      
       <div class="project-card_image-container" style={style}></div>
     </div>
   );
