@@ -17,7 +17,5 @@ const portfolioProjects = gql`
 `;
 
 export const getProjects = async () => {
-  const response = await request(ENDPOINT, portfolioProjects);
-  console.log(response)
-  return await response;
+  return await request(ENDPOINT, portfolioProjects);
 };
