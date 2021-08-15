@@ -16,13 +16,13 @@ $base-font-size: 24px;
 $block-padding-top: 8vh;
 $block-padding-sides: 20%;
 
-
 /*
     =======================
     Screen sizes
     =======================
 */
-$screen-sm-min: 576px; // Small tablets and large smartphones
-$screen-md-min: 768px; // Small tablets (portrait view)
-$screen-lg-min: 992px; // Tablets and small desktops
-$screen-xl-min: 1200px; // Large tablets and desktops
+$screen-sm: 599px; // Small tablets and large smartphones
+$screen-md: 600px; // Small tablets (portrait view)
+$screen-lg: 900px; // Tablets and small desktops
+$screen-xl: 1200px; // Large tablets and desktops
+$screen-xxl: 1800px; // Large tablets and desktops
