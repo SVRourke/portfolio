@@ -2,6 +2,8 @@
 
 #contact {
   @include block_container;
+  height: fit-content;
+  padding: 2rem 1rem;
 
   h3 {
     font-size: 4rem;
@@ -9,42 +11,43 @@
   }
 
   #contact-container {
-    @include row;
-    height: 50vh;
     border: solid $color--base-black 2px;
     justify-content: space-between;
     border-radius: 0.3rem;
     padding: 3rem;
+    @include column;
+    height: fit-content;
 
-    @include sm {
-      @include column;
-      height: fit-content;
+    @include lg {
+      @include row;
     }
 
     #contact-badges {
-      @include column;
+      display: flex;
+      flex-direction: row !important;
+      justify-content: space-between;
 
-      @include sm {
+      @include lg {
         display: flex;
-        flex-direction: row !important;
-        justify-content: space-between;
+        flex-direction: column !important;
       }
+
       .contact-badge {
         @include row;
         align-items: center;
         text-decoration: none;
-        width: 100%;
+        margin-bottom: 2rem;
 
-        @include sm {
-          width: fit-content;
-          margin-bottom: 2rem;
+        @include lg {
+          width: 100%;
         }
 
         p {
           font-size: 2rem;
-          @include sm {
-            width: 0;
-            display: none;
+          display: none;
+          width: 0;
+          @include lg {
+            display: block;
           }
         }
 
@@ -62,9 +65,9 @@
     form {
       height: 100%;
       justify-content: center;
+      width: 100%;
 
       @include sm {
-        width: 100%;
       }
 
       textarea {
@@ -91,6 +94,12 @@
         padding: 0.7rem 0.5rem;
       }
 
+      textarea {
+        @include lg {
+          height: 10rem;
+        }
+      }
+
       :not(:last-child) {
         margin-bottom: 2rem;
       }
@@ -99,10 +108,9 @@
     #contact-badges,
     form {
       @include column;
-      width: 50%;
 
-      @include sm {
-        width: 100%;
+      @include lg {
+        width: 50%;
       }
     }
   }
