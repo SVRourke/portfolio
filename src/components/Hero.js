@@ -19,8 +19,8 @@ export default function Hero() {
           easier for people.
         </h1>
       </div>
-      <div className="hero-imagePlaceholder">
-        <Calendar n={200} />
+      <div className="hero-image-container">
+        <Calendar n={100} />
         <img src={ProfilePic} />
       </div>
     </div>
