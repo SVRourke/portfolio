@@ -35,9 +35,9 @@
 }
 
 @mixin block_container {
-  padding: 1rem;
-  max-width: 100%;
   @include sm {
+    padding: 1rem;
+    max-width: 100%;
   }
 
   @include md {
