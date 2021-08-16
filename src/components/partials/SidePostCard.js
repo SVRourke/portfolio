@@ -4,7 +4,7 @@ import "styles/components/partials/SidePostCard.scss";
 const SidePostCard = ({ post: { date, title, description, url } }) => {
   const newDate = date.split("-");
   const suffix = description.length > 80 ? "..." : "";
-  const newDesc = description.slice(0, 90);
+  const newDesc = description.slice(0, 50);
   return (
     <a href={url} class="side-post">
       <span>
