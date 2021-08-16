@@ -41,7 +41,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" calss="column">
+    <section id="contact">
       <h2 class="block_heading">let's talk!</h2>
       <div id="contact-container">
         <div id="contact-badges">
