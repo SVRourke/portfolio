@@ -8,8 +8,6 @@
   grid-template-rows: 10vh auto 20vh;
   width: 100vw;
 
-  @include md {
-  }
   @include lg {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vh auto;
@@ -68,8 +66,18 @@
   img {
     position: relative;
     left: -30%;
-    top: -90%;
+    top: -150%;
     height: 100%;
     z-index: 5;
+
+    @include md {
+      left: 0%;
+      top: -80%;
+    }
+
+    @include lg {
+      left: -30%;
+      top: -80%;
+    }
   }
 }
