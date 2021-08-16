@@ -1,47 +1,5 @@
 @import "variables.scss";
 
-@mixin block_container {
-  // width: 100%;
-  // height: 100%;
-
-  @include sm {
-    padding: 1rem;
-  }
-
-  @include md {
-    max-width: 100vw;
-    padding: 2rem 4rem;
-  }
-
-  @include lg {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 8vh;
-  }
-}
-
-@mixin row {
-  display: flex;
-  flex-direction: row;
-}
-
-@mixin column {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin bordered {
-  border: solid $color--base-black 2px;
-  border-radius: 0.3rem;
-}
-
-@mixin border-thin {
-  @include bordered;
-  border-width: 1px;
-}
-
-// BREAKPOINTS
-
 // Small devices
 @mixin sm {
   @media (max-width: #{$screen-sm}) {
@@ -74,4 +32,42 @@
   @media (min-width: #{$screen-xxl}) {
     @content;
   }
+}
+
+@mixin block_container {
+  padding: 1rem;
+  max-width: 100%;
+  @include sm {
+  }
+
+  @include md {
+    max-width: 100%;
+    padding: 2rem 4rem;
+  }
+
+  @include lg {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 8vh;
+  }
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin bordered {
+  border: solid $color--base-black 2px;
+  border-radius: 0.3rem;
+}
+
+@mixin border-thin {
+  @include bordered;
+  border-width: 1px;
 }
