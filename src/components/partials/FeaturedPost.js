@@ -8,10 +8,10 @@ const FeaturedPost = ({ post }) => {
   return (
     <a href={post.url} id="featured-post" style={bgImg}>
       <div id="featured-post_info-card">
-        <h3>{post.title.slice(0, 20)}...</h3>
+        <h3>{post.title}</h3>
         <hr></hr>
         <p>
-          {post.description.slice(0, 90)}... <u>read more ></u>
+          {post.description.slice(0, 70)}... <u>read more ></u>
         </p>
       </div>
     </a>
