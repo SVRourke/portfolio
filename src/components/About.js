@@ -67,7 +67,7 @@ export default function About() {
       </div>
 
       <div class="about-content">
-        <Calendar n={40} />
+        <Calendar n={80} />
       </div>
     </section>
   );
