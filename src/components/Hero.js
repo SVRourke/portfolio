@@ -20,7 +20,7 @@ export default function Hero() {
         </h1>
       </div>
       <div className="hero-image-container">
-        <Calendar n={100} />
+        <Calendar n={200} />
         <img src={ProfilePic} />
       </div>
     </div>
