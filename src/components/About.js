@@ -1,18 +1,8 @@
 import React from "react";
-import ArrayAccordion from "./ArrayAccordion";
 import "styles/components/About.scss";
 import Calendar from "./Calendar";
+
 export default function About() {
-  const items = [
-    { title: "languages", items: ["JavaScript", "Ruby", "Python"] },
-    { title: "frameworks", items: ["Ruby on Rails", "React", "Express"] },
-    { title: "markdown", items: ["HTML5", "markdown (GitHub)"] },
-    { title: "tools", items: ["Figma", "etc"] },
-    { title: "misc", items: ["Figma", "etc"] },
-  ];
-
-  const accordions = items.map((item) => <ArrayAccordion data={item} />);
-
   return (
     <section id="about">
       <div class="about-content">
@@ -26,12 +16,58 @@ export default function About() {
             I'm constantly learning about new technologies.
           </p>
         </div>
+      </div>
 
-        <div id="info-grid">{accordions}</div>
+      <div id="info">
+        {/* languages */}
+        <details>
+          <summary>languages</summary>
+          <ul>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Python</li>
+            <li>CSS (SCSS)</li>
+          </ul>
+        </details>
+
+        {/* frameworks */}
+        <details>
+          <summary>frameworks</summary>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>React</li>
+            <li>Express</li>
+            <li>Sinatra</li>
+            <li>Flask</li>
+          </ul>
+        </details>
+
+        {/* tools */}
+        <details>
+          <summary>tools</summary>
+          <ul>
+            <li>Figma</li>
+            <li>Git/GitHub</li>
+            <li>GitLab</li>
+            <li>GIMP</li>
+            <li>MySQL Workbench</li>
+            <li>Notion</li>
+            <li>Todoist</li>
+          </ul>
+        </details>
+
+        {/* misc */}
+        <details>
+          <summary>misc.</summary>
+          <ul>
+            <li>HTML</li>
+            <li>Markdown</li>
+          </ul>
+        </details>
       </div>
 
       <div class="about-content">
-        <Calendar n={28} />
+        <Calendar n={40} />
       </div>
     </section>
   );
