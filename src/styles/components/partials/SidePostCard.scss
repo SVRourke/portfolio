@@ -4,11 +4,12 @@
   grid-column: 7 / 13;
   display: grid;
   grid-template-columns: 20% 80%;
-  // align-items: center;
+  width: 100%;
 
   div {
     @include column;
     justify-content: center;
+    margin-left: 0.5rem;
 
     height: 100%;
     padding-right: 1rem;
