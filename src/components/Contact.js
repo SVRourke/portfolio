@@ -45,15 +45,18 @@ export default function Contact() {
       <h2 class="block_heading">let's talk!</h2>
       <div id="contact-container">
         <div id="contact-badges">
-          <a class="contact-badge" href="#hero">
+          <a
+            class="contact-badge"
+            href="https://www.linkedin.com/in/samuel-v-rourke/"
+          >
             <ImLinkedin />
             <p>LinkedIn</p>
           </a>
-          <a class="contact-badge" href="#hero">
+          <a class="contact-badge" href="https://github.com/svrourke">
             <ImGithub />
             <p>Github</p>
           </a>
-          <a class="contact-badge" href="#hero">
+          <a class="contact-badge" href="https://twitter.com/SVRourke">
             <ImTwitter />
             <p>Twitter</p>
           </a>
